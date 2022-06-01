@@ -29,11 +29,10 @@ DEPENDS += " \
 
 PV = "0.0-gitr${SRCPV}"
 
-SRC_URI = " \
-  git://github.com/atom/electron.git;protocol=https \
-  file://fix_build.patch \
-"
-SRCREV = "135aca02af8aef5792984d47bf1c7a35a11f90a3"
+
+SRC_URI = "https://github.com/electron/electron/tree/main/npm"
+
+SRC_URI[sha256sum] = "fa31d48e4027622c130c61a9c0f9f93e2e091d6ad5bc24b9c094a8a2763c5165"
 
 S = "${WORKDIR}/git"
 
